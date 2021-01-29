@@ -4,9 +4,30 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Trần Thanh Long</title>
-	<link rel="stylesheet" href="">
+	<style type="text/css" media="screen">
+		.wrap { position: relative; height: 100vh; padding: 30px; }
+		.list { position: absolute; top: 50%; transform: translateY(-50%); left: 0; right: 0; width: 800px; max-width: 100%; display: flex; flex-wrap: wrap; }
+		.list .item { -ms-flex: 0 0 50%; flex: 0 0 50%; max-width: 50%; padding: 0 30px; text-align: center; }
+		.list .item .img { overflow: hidden; }
+		.list .item .img img { border-radius: 100%; transition: all 0.5s; transform: matrix(1,0,0,1,0,100) }
+		.list .item .img.on img { transform: matrix(1,0,0,1,0,0) }
+		.list .item .btn a { margin-top: 15px; color: #fff; display: inline-block; background: #333; border-radius: 3px; text-decoration: none; transition: all 0.5s; }
+		.list .item .btn a:hover { color: #000; background: #fafafa; }
+	</style>
 </head>
 <body>
-	<h1>Hi! My name is Long</h1>
+	<div class="wrap">
+		<h1 class="title ani_text">Hi! Welcome to Thanh Long</h1>
+		<div class="list">
+			<div class="item">
+				<div class="img"><img src="img/ava_fb.png"></div>
+				<p class="btn"><a href="https://facebook.com/thanhlong25" target="_blank">Add friend</p>
+			</div>
+			<div class="item">
+				<div class="img"><img src="img/ava_web.png"></div>
+				<p class="btn"><a href="https://hoangtucodon.com" target="_blank">View website</p>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
